@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Nomer{
-    public static void nom(){
+    public void nom(){
        String string = "MOH111 UHH9 LLO00";
        Pattern pattern = Pattern.compile("MOH(\\w*)");
        Matcher matcher = pattern.matcher(string);
