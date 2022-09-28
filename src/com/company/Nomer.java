@@ -3,11 +3,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Nomer{
-   // public Nomer(String moh111, String uhh9, String llo00) {
-   // }
-
-    public static boolean nomer(String string){
-       //string = "MOH111 UHH9 LLO00";
+    public static void nom(){
+       String string = "MOH111 UHH9 LLO00";
        Pattern pattern = Pattern.compile("MOH(\\w*)");
        Matcher matcher = pattern.matcher(string);
        if (matcher.find()){
@@ -15,6 +12,5 @@ public class Nomer{
        } else{
            System.out.println("There's no such tring!");
        }
-        return false;
     }
 }
